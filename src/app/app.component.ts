@@ -8,26 +8,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-
+  
 
   postlistcomponents = [
     {
       title: 'Mon premier post',
       content: 'Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia,',
-      loveIts: 0,
-      created_at: Date
+      loveIts: 1,
+      created_at: new Date()
     },
     {
       title: 'Mon deuxième post',
       content: 'Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia,',
       loveIts: 0,
-      created_at: Date
+      created_at: new Date()
     },
     {
       title: 'Mon troisième post',
       content: 'Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia,',
-      loveIts: 0,
-      created_at: Date
+      loveIts: -1,
+      created_at: new Date()
     }
   ];
 

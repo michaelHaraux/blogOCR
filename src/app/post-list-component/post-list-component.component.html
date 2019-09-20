@@ -1,6 +1,13 @@
-<div class="post">
+
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': PostListComponentLoveIts > 0,
+                'list-group-item-danger': PostListComponentLoveIts < 0}">
+
 <p>Titre: {{PostListComponentTitle}}</p>
 <p>{{PostListComponentContent}}</p>
 <p>Like: {{PostListComponentLoveIts}}</p>
-<p>Date: {{PostListComppnentCreated_at}}</p>
-</div>
+<p>Date: {{PostListComppnentCreated_at | date : 'y MMMM EEEE d'}}</p>
+<button >+ 1</button> <button >- 1</button>
+
+
+</li>

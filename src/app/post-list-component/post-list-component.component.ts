@@ -15,6 +15,11 @@ export class PostListComponentComponent implements OnInit {
 
   ngOnInit() {
   }
-
- 
+  getColor() {
+    if(this.PostListComponentLoveIts > 0) {
+      return 'green';
+    } else if(this.PostListComponentLoveIts < 0) {
+      return 'red';
+    }
+  }
 }
