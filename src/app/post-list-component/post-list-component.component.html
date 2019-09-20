@@ -3,11 +3,14 @@
                 'list-group-item-success': PostListComponentLoveIts > 0,
                 'list-group-item-danger': PostListComponentLoveIts < 0}">
 
-<p>Titre: {{PostListComponentTitle}}</p>
+<div class="hautPost"><span class="titre">Titre: {{PostListComponentTitle}}</span><span class="date">Date: {{PostListComppnentCreated_at | date : 'y MMMM EEEE d'}}</span></div>
 <p>{{PostListComponentContent}}</p>
-<p>Like: {{PostListComponentLoveIts}}</p>
-<p>Date: {{PostListComppnentCreated_at | date : 'y MMMM EEEE d'}}</p>
-<button >+ 1</button> <button >- 1</button>
 
+
+<button style="width:100px" class="btn btn-danger" (click)="onSupprimerLike()">-1 </button>
+<button style="width:100px" class="btn btn-success" (click)="onAjouterLike()">+1 </button>
+<span> Like: {{PostListComponentLoveIts}}</span>
+               
+               
 
 </li>
